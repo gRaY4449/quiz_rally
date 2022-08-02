@@ -5,6 +5,6 @@
 
 <body>
     <h1>町解け</h1>
-    <a href="index.php">START</a>
+    <a href="common/index.php">START</a>
 </body>
 </html>

@@ -1,0 +1,33 @@
+.page_header{
+    background-color: #000000;
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.page_footer {
+    height: 10%;
+    color: aliceblue;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map{
+    height:90%;
+    /* justify-content: center;
+    align-items: center; */
+    position: fixed;
+    bottom: 5px;;
+    border: 0ch;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
