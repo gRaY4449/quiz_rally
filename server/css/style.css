@@ -1,14 +1,28 @@
-.page_header{
-    background-color: #000000;
+.center {
+    text-align: center;
+}
+
+.flex {
     display: flex;
-    height: 10%;
+}
+
+.page_header {
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+    font-size: 30px;
+    background-color: #000000;
+    color: aliceblue;
+    display: flex;
+    height: 15%;
+    padding: 10px;
+    opacity: 0.7;
     align-items: center;
     justify-content: center;
 }
+
 .page_footer {
     height: 10%;
     color: aliceblue;
-    background-color: black;
+    background-color:black;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -17,17 +31,135 @@
     align-items: center;
 }
 
-.map{
-    height:90%;
+/* tweet.php */
+
+/* start.php */
+.title_page {
+    width: 100vw;
+    height: 100vh;
+    /* 背景画像の初期値 */
+    background-image: url(images/image_1.jpg); 
+    background-position: center center;
+    background-size: cover;
+}
+
+.app_title {
+    color: aliceblue;
+    font-size: 5ch;
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+    padding-top: 2ch;
+}
+
+.start_button {
+    padding-bottom: 0ch;
+}
+
+/* .title_page {
+    background-image: url('/images/walker_2.jpg');
+    background-size: cover;
+} */
+
+/* index.php */
+.location_choices {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.location_choice {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.map_wrapper{
+    position: relative;
+}
+
+/* map.php */
+.map {
+    height: 90%;
     /* justify-content: center;
     align-items: center; */
     position: fixed;
-    bottom: 5px;;
+    bottom: 5px;
     border: 0ch;
     width: 100%;
     display: flex;
-    padding: 0;
     margin: 0;
+    /* display: inline-block; */
+    /* background: blue; */
+    /* padding-bottom: 50px; */
 
 }
 
+.ques{
+    font-size: 15px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 9999;
+}
+.que{
+    color: #000000;
+
+}
+
+iframe {
+    /* filter: grayscale(1); */
+    opacity: 0.8;
+    vertical-align: bottom;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* question.php */
+.bg{
+    background-color: #000000;
+}
+.que_imgs{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.map_like_flame{
+    background-image: url(../images/flame.png );
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 99%;
+    width: 100%;
+    padding: 20px;
+}
+.input_flame{
+    border: 1px solid;
+}
+.send_button{
+    border: 1px solid;
+    background-color:rgb(190, 178, 178);
+    opacity: 0.7;
+}
+.container{
+    position: relative;
+}
+.container::after{
+    position: absolute;
+    box-shadow: inset 0 0 15px 15px gray;
+}
+.D{
+    font-size: 1px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    background:bisque;
+    opacity: 0.6;
+    height:17px;
+    border: 1px solid;
+    padding:0px;
+    cursor: pointer;
+}
+.E{
+    display: none;
+    background: #ffaf74;
+    height: 100px;
+}
