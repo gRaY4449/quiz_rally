@@ -9,9 +9,12 @@ $score = $_GET['score'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>お疲れ</h1>
-    <h2>Your score is <?= $score ?></h2>
+    <h1 class="center">Finish</h1>
+    <h2 class="center">Passed</h2>
+    <h2 class="center">Your score is <?= $score ?></h2>
 </body>
 </html>

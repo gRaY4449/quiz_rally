@@ -1,5 +1,11 @@
+'use strict';
+
 $(function() {
-    $(".D").click(function() {
-        $(".E").slideToggle("");
-    });
+    
+$('#hint_btn').on('click', function(){
+    $('#hint').toggleClass('open');
+});
+
+
+
 });

@@ -2,6 +2,7 @@
 $answer_3 = '';
 $score = $_GET['score'];
 $err_msg = '';
+$score_3 = 0;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $answer_3 = $_POST['answer_3'];
@@ -9,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($answer_3)) {
         $err_msg = '※Please enter your answer※';
     } elseif ($answer_3 === 'みちのえき') {
+        $score_3 = 1;
         $score++;
         header('Location: question_4.php?score=' . $score);
         exit;
@@ -21,33 +23,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html lang="ja">
 
-<?php include_once __DIR__ . '/_head.php' ?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP_apP</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<body>
-    <h1 class="center">Question_3</h1>
-    <form action="" method="POST">
-        <?php if ($err_msg) : ?>
-            <ul class="">
-                <li><?= $err_msg ?></li>
-            </ul>
-        <?php endif; ?>
+<body class="bg">
+    <div class="map_like_flame">
 
-        <p class="center">下の絵を見て答えを平仮名で入力せよ</p><br>
-        <img src="images/que3.png" alt="" class="que_imgs"><br>
+        <h1 class="center">Question_3</h1>
+        <form action="" method="POST">
+            <?php if ($err_msg) : ?>
+                <ul class="">
+                    <li><?= $err_msg ?></li>
+                </ul>
+            <?php endif; ?>
 
-        <div class="center">
-            <label for="">Answer:</label>
-            <input type="text" name="answer_3"><br><br>
-            <input type="submit" value="send">
-        </div>
-    </form>
+            <p class="center">下の問題文を見て答えを平仮名で入力せよ</p><br>
+            <img src="images/que3.png" alt="" class="que_imgs"><br>
 
-    <footer>
-        <h3>correct:<?= $score ?></h3>
-        <a href="map.php">MAP</a>
-    </footer>
+            <div class="center">
+                <label for="">Answer:</label>
+                <input type="text" name="answer_3" class="input_flame"><br><br>
+                <input type="submit" value="send" class="send_button">
+            </div>
+        </form><br>
 
+        <div class="D" id="hint_btn">Hint</div>
+        <div class="E center" id="hint">1,数字はどこの箱の下にある？</div>
 
+        <br><br><br><br><br><br><br>
+
+        <footer>
+            <h3>correct:<?= $score ?></h3>
+            <a href="map.php">MAP</a>
+        </footer>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/down.js"></script>
 </body>
 
 </html>

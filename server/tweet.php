@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="https://publish.twitter.com/">tweet</a><br>
+    <a href="https://twitter.com/intent/tweet?button_hashtag=平泉&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #平泉</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
     <a href="start.php">move</a>
 </body>
 </html>

@@ -22,7 +22,7 @@
 .page_footer {
     height: 10%;
     color: aliceblue;
-    background-color:black;
+    background-color: black;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -38,20 +38,27 @@
     width: 100vw;
     height: 100vh;
     /* 背景画像の初期値 */
-    background-image: url(images/image_1.jpg); 
+    background-image: url(../images/image_1.jpg);
     background-position: center center;
     background-size: cover;
 }
 
 .app_title {
-    color: aliceblue;
+    /* color: aliceblue;
     font-size: 5ch;
     font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
-    padding-top: 2ch;
+    padding-top: 2ch; */
+    width: 100%;
+    padding-top: 100px;
 }
 
 .start_button {
     padding-bottom: 0ch;
+    font-size: 24px;
+}
+.start_button_2{
+    color: #000000;
+    font-weight: bold;
 }
 
 /* .title_page {
@@ -60,6 +67,15 @@
 } */
 
 /* index.php */
+
+.page_header2 {
+    background-color: #000000;
+    opacity: 0.8;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 10px;
+}
+
 .location_choices {
     position: absolute;
     top: 90px;
@@ -73,7 +89,7 @@
     font-weight: bold;
 }
 
-.map_wrapper{
+.map_wrapper {
     position: relative;
 }
 
@@ -94,14 +110,15 @@
 
 }
 
-.ques{
+.ques {
     font-size: 15px;
     position: absolute;
     top: 100px;
     left: 20px;
     z-index: 9999;
 }
-.que{
+
+.que {
     color: #000000;
 
 }
@@ -116,50 +133,82 @@ iframe {
 }
 
 /* question.php */
-.bg{
+.bg {
     background-color: #000000;
 }
-.que_imgs{
+
+.que_imgs {
     width: 100%;
     padding-bottom: 10px;
 }
-.map_like_flame{
+
+.map_like_flame {
     background-image: url(../images/flame.png );
     background-repeat: no-repeat;
     /* background-size: cover; */
-    background-size: 99%;
+    background-size: 99% 900px;
     width: 100%;
     padding: 20px;
+
 }
-.input_flame{
+
+.input_flame {
     border: 1px solid;
 }
-.send_button{
+
+.send_button {
     border: 1px solid;
-    background-color:rgb(190, 178, 178);
+    background-color: rgb(190, 178, 178);
     opacity: 0.7;
 }
-.container{
-    position: relative;
+
+/* .container {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
-.container::after{
-    position: absolute;
-    box-shadow: inset 0 0 15px 15px gray;
-}
-.D{
+
+.container::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: inset 0 0 10px 15px #FFF;
+} */
+
+
+
+
+.D {
     font-size: 1px;
     text-align: center;
     width: 100%;
     display: inline-block;
-    background:bisque;
+    background: bisque;
     opacity: 0.6;
-    height:17px;
+    height: 17px;
     border: 1px solid;
-    padding:0px;
+    padding: 0px;
     cursor: pointer;
 }
-.E{
+
+.E {
     display: none;
-    background: #ffaf74;
-    height: 100px;
+    /* background: bisque; */
+    opacity: 0.6;
+    /* height: 100px; */
+}
+
+#hint {
+    display: none;
+}
+
+#hint.open {
+    display: block;
 }

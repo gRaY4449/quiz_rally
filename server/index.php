@@ -20,12 +20,21 @@
 </head>
 
 <body>
+    <header class="center page_header2">
+        <p>Please choice a direction</p>
+    </header>
     <div class="map_wrapper">
         <div class="location_choices">
             <a href="map.php" class="location_choice">to 中尊寺</a><br>
-            <?php for ($i = 1; $i <= 7; $i++) : ?>
-                <a href="" class="location_choice">location<?= $i ?></a><br>
-            <?php endfor ?>
+            <a href="" class="location_choice">to 毛越寺</a><br>
+            <a href="" class="location_choice">to 金鶏山</a><br>
+            <a href="" class="location_choice">to 観自在王院跡</a><br>
+            <a href="" class="location_choice">to 無量光院跡</a><br>
+            <a href="" class="location_choice">to 柳之御所遺跡</a><br>
+            <a href="" class="location_choice">to 白鳥舘遺跡</a><br>
+            <a href="" class="location_choice">to 長者ヶ原廃寺跡</a><br>
+            <a href="" class="location_choice">to 達谷窟</a><br>
+            <a href="" class="location_choice">to 骨寺村荘園遺跡</a><br>
         </div>
 
         <iframe src="https://www.google.com/maps/d/embed?mid=1URpzJ3aZalmnewDvW9WMjYg0BvobSxE&ehbc=2E312F" class="map_1"></iframe>
