@@ -24,3 +24,21 @@ function h($str)
     // ENT_QUOTES: シングルクオートとダブルクオートを共に変換する。
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
+
+function insert_score($score)
+{
+    $dbh = connect_db();
+
+    $sql = <<<EOM
+    INSERT INTO
+        scores
+        (score)
+    VALUES
+        (:score);
+    EOM;
+
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindValue('score', $score, PDO::PARAM_STR);
+
+    $stmt->execute();
+}
