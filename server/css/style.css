@@ -32,14 +32,28 @@
 }
 
 /* tweet.php */
+.logo {
+    width: 40%;
+    align-items: center;
+}
 
+.order {
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.tweet_bg{
+    background-image: url(../images/bg4.jpg);
+    background-position: 50% 30%;
+    background-size:cover;
+}
 /* start.php */
 .title_page {
     width: 100vw;
     height: 100vh;
     /* 背景画像の初期値 */
-    background-image: url(../images/image_1.jpg);
-    background-position: center center;
+    background-image: url(../images/bg5.jpg);
+    background-position: 30% 30%;
     background-size: cover;
 }
 
@@ -56,7 +70,8 @@
     padding-bottom: 0ch;
     font-size: 24px;
 }
-.start_button_2{
+
+.start_button_2 {
     color: #000000;
     font-weight: bold;
 }
@@ -211,4 +226,14 @@ iframe {
 
 #hint.open {
     display: block;
+}
+
+/* goal.php */
+.score {
+    font-size: 150px;
+    color: red;
+}
+
+.goal_title {
+    font-size: 45px;
 }

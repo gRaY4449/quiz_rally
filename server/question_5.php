@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body class="bg">
     <div class="map_like_flame">
-        <h1 class="center">Question_5</h1>
+        <h1 class="center">問題5</h1>
         <form action="" method="POST">
             <?php if ($err_msg) : ?>
                 <ul class="">
@@ -46,19 +46,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="images/que5.png" alt="" class="que_imgs"><br>
 
             <div class="center">
-                <label for="">Answer:</label>
+                <label for="">解答:</label>
                 <input type="text" name="answer_5" class="input_flame"><br><br>
                 <input type="submit" value="send" class="send_button">
             </div>
         </form><br>
 
-        <div class="D" id="hint_btn">Hint</div>
+        <div class="D" id="hint_btn">ヒント</div>
         <div class="E center" id="hint">1,Aを使った四つの熟語のAの読み方はすべて同じ<br>2,読+Bでは難しい為、他の漢字で考えよ<br>なお、読+B以外の熟語のBの読み方は同じ</div>
 
-        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
 
         <footer>
-            <h3>correct:<?= $score ?></h3>
+            <h3>正解数:<?= $score ?></h3>
             <a href="map.php">MAP</a>
         </footer>
 

@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <h1 class="center">Question_7</h1>
+    <h1 class="center">問題7</h1>
     <form action="" method="POST">
         <?php if ($err_msg) : ?>
             <ul class="">
@@ -64,14 +64,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <img src="images/que7.png" alt="" class="que_imgs"><br>
 
         <div class="center">
-            <label for="">Answer:</label>
+            <label for="">解答:</label>
             <input type="text" name="answer_7" class="input_flame"><br><br>
             <input type="submit" value="send" class="send_button">
         </div>
     </form>
 
     <footer>
-        <h3>correct:<?= $score ?></h3>
+        <h3>正解数:<?= $score ?></h3>
         <a href="map.php">MAP</a>
     </footer>
 
