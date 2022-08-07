@@ -33,9 +33,9 @@
         <form action="start.php">
             <p class="center">
                 <input type="checkbox" id="consent-chk" name="consent-chk">
-                <label for="consent-chk">tweet完了</label>
+                <label for="consent-chk" class="tweet_comment">tweet完了</label>
             </p>
-            <p class="center"><input type="submit" value="参加" disabled class="send_button"></p>
+            <p class="center"><input type="submit" value="参加" disabled class="send_button_2"></p>
         </form>
     </div>
 

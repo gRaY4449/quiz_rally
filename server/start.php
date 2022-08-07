@@ -11,15 +11,30 @@
 </head>
 
 <body class="title_page">
-    <img src="images/title.png" alt="" class="app_title">
+    <div class="center">
+        <img src="images/title.png" alt="" class="app_title">
 
+        <br><br>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+        <img src="images/title_2.png" alt="" class="img_1">
+    </div>
+
 
     <div class='center start_button'>
         <a href="index.php" class="start_button_2">START</a>
     </div>
-    <!-- <div id="randomImg"></div> -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script>
+        jQuery(function($) {
+            $('.bg-slider').bgSwitcher({
+                interval: 1000,
+                images: ['images/bg.jpg', 'images/bg2.jpg', 'images/bg3.jpg'], // 切り替える背景画像を指定
+            });
+        });
+    </script>
 </body>
 
 </html>

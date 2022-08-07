@@ -42,19 +42,34 @@
     font-weight: bold;
     color: aliceblue;
 }
-.tweet_bg{
+
+.tweet_bg {
     background-image: url(../images/bg4.jpg);
-    background-position: 50% 30%;
-    background-size:cover;
+    background-position: 53% 30%;
+    background-size: cover;
 }
+.tweet_comment{
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px white;
+}
+.send_button_2 {
+    border: 2px solid;
+    background-color: rgb(190, 178, 178);
+}
+
 /* start.php */
 .title_page {
     width: 100vw;
     height: 100vh;
-    /* 背景画像の初期値 */
-    background-image: url(../images/bg5.jpg);
+    /* background-image: url(../images/bg5.jpg); */
     background-position: 30% 30%;
     background-size: cover;
+}
+
+.img_1 {
+    width: 90%;
+    align-items: center;
 }
 
 .app_title {
@@ -63,7 +78,7 @@
     font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
     padding-top: 2ch; */
     width: 100%;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .start_button {
